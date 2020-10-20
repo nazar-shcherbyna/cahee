@@ -61,6 +61,17 @@ img {
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, .5);
 }
 
+link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: linear-gradient(to top, rgba(0,0,0, 1) 0%, rgba(0,0,0, 0) 100%);
+    z-index: 2;
+}
+
 .data {
     margin: 30px;
     width: 60px;
@@ -73,8 +84,7 @@ img {
     line-height: 0.8;
     color: #fff;
     text-align: center;
-    background-color: #3d3d3d;
-    opacity: .8;
+    background-color: rgba(0, 0, 0, .5);
 } 
 
 .num {
